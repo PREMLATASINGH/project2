@@ -8,3 +8,5 @@ data = {
 }
 df = pd.DataFrame(data)
 print(df)
+print("\nSummary Statistics:")
+print(df.describe())
