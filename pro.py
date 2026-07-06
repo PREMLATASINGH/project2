@@ -31,3 +31,6 @@ print(sorted_customers)
 print("\nCustomers with Purchase Amount Between 150 and 250:")
 mid_value_customers = df[(df['purchase_amount'] >= 150) & (df['purchase_amount'] <= 250)]
 print(mid_value_customers)
+print("\nCustomers with Purchase Amount Less than 150:")
+low_value_customers = df[df['purchase_amount'] < 150]
+print(low_value_customers)
