@@ -28,3 +28,6 @@ print(high_value_customers)
 print("\nCustomers Sorted by Purchase Amount:")
 sorted_customers = df.sort_values(by='purchase_amount', ascending=False)
 print(sorted_customers)
+print("\nCustomers with Purchase Amount Between 150 and 250:")
+mid_value_customers = df[(df['purchase_amount'] >= 150) & (df['purchase_amount'] <= 250)]
+print(mid_value_customers)
