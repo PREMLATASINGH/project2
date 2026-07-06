@@ -25,3 +25,6 @@ print(top_customers)
 print("\nCustomers with Purchase Amount Greater than 200:")
 high_value_customers = df[df['purchase_amount'] > 200]
 print(high_value_customers)
+print("\nCustomers Sorted by Purchase Amount:")
+sorted_customers = df.sort_values(by='purchase_amount', ascending=False)
+print(sorted_customers)
