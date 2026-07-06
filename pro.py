@@ -22,3 +22,6 @@ print(total_purchase_by_category)
 print("\nTop 3 Customers by Purchase Amount:")
 top_customers = df.nlargest(3, 'purchase_amount')
 print(top_customers)
+print("\nCustomers with Purchase Amount Greater than 200:")
+high_value_customers = df[df['purchase_amount'] > 200]
+print(high_value_customers)
