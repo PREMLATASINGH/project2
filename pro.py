@@ -41,3 +41,4 @@ print("\nCustomers with Purchase Amount Less than 200 and in Clothing Category:"
 print(df[(df['purchase_amount'] < 200) & (df['product_category'] == 'Clothing')])
 print(df[(df['purchase_amount'] < 200) & (df['product_category'] == 'Clothing')].shape[0])
 print(df.groupby('product_category')['purchase_amount'].agg(['mean', 'sum', 'count']))
+print(df.groupby('product_category')['purchase_amount'].agg(['mean', 'sum', 'count']).reset_index())
