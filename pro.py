@@ -37,3 +37,4 @@ print(low_value_customers)
 print("\nCustomers with Purchase Amount Greater than 200 and in Electronics Category:")
 electronics_high_value_customers = df[(df['purchase_amount'] > 200) & (df['product_category'] == 'Electronics')]
 print(electronics_high_value_customers)
+print("\nCustomers with Purchase Amount Less than 200 and in Clothing Category:")
