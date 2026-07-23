@@ -45,3 +45,4 @@ print(df.groupby('product_category')['purchase_amount'].agg(['mean', 'sum', 'cou
 print(df.groupby('product_category')['purchase_amount'].agg(['mean', 'sum', 'count']).reset_index().sort_values(by='sum', ascending=False))
 print(df.groupby('product_category')['purchase_amount'].agg(['mean', 'sum', 'count']).reset_index().sort_values(by='sum', ascending=False).head(3))
 print(df.groupby('product_category')['purchase_amount'].agg(['mean', 'sum', 'count']).reset_index().sort_values(by='sum', ascending=False).head(3).to_dict(orient='records'))
+print(df.groupby('product_category')['purchase_amount'].agg(['mean', 'sum', 'count']).reset_index().sort_values(by='sum', ascending=False).head(3).to_dict(orient='records')[0])
